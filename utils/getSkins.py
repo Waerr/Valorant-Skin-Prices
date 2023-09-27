@@ -11,7 +11,7 @@ def getPrice():
     vp_soup = BeautifulSoup(vp_html, "lxml")
 
     # Find the tables with class wikitable and extract the prices from the 6th column of each row
-    vp_rows = vp_soup.select("table.wikitable")[1].find_all("tr")[1:]
+    vp_rows = vp_soup.select("table.fandom-table")[0].find_all("tr")[1:]
     vp_prices = [re.sub("[\xa0\n,]", "", row.find_all("td")[4].text.strip()) for row in vp_rows]
     vp_prices = [int(price) for price in vp_prices]
 
