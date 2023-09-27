@@ -7,7 +7,7 @@ A simple desktop application built with Python and Tkinter that displays the pri
 1. Clone the repository
 2. Install Python (if you haven't already)
 3. Install the required packages using the following command: `pip install -r requirements.txt`
-4. Run the app using the following command: `python app.py`
+4. Run the app using the following command: `python main.py`
 
 Upon running the app, you'll see the current price of Valorant skins in USD. You can select a different currency from the dropdown menu, and the price will be updated accordingly.
 
