@@ -1,6 +1,5 @@
 import requests, lxml, re
 from bs4 import BeautifulSoup
-import time
 
 def getPrice():
     """HANDLES THE PRICE OF ALL THE SKINS IN VP"""
